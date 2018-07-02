@@ -1,0 +1,29 @@
+{
+  "name": "recipe-archive",
+  "version": "1.0.0",
+  "description": "An achive of good and tested recipes. Easily searchable and pleasant to the eye.",
+  "main": "index.js",
+  "author": "Maria Katsourani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariakatsourani/recipe-archive"
+  },
+  "scripts": {
+    "start": "bundle exec jekyll serve",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
+  }
+}

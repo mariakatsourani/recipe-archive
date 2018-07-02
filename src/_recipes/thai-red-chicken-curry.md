@@ -1,5 +1,5 @@
 ---
-title: Thai red curry recipe
+title: Thai red curry
 category: [ main ]
 tags: [ thai, curry, chicken ]
 cooking_time: 45

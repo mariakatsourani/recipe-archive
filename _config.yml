@@ -13,6 +13,11 @@ github_username:  jekyll
 markdown: kramdown
 
 source: src
+destination: dist
+
+exclude: 
+  - /css
+  - /js
 
 plugins:
   - jekyll-feed
