@@ -1,9 +1,45 @@
-h1 {
-  font-family: 'Roboto';
-  font-weight: 400;
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/type";
+
+$headings-font-family: 'Roboto';
+$font-family-base: 'Open Sans';
+
+$purple: #6f42c1;
+
+.recipe {
+  display: block;
+  border: 2px solid $purple;
+  border-radius: 3px;
+  margin: 3rem;
+  padding: 2rem;
+  box-shadow: 10px 10px 0 0 $purple;
+  color: black;
+  transition: all 100ms ease-in;
+  width: 600px;
+
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 0 0 $purple;
+    color: currentColor;
+  }
+
+  h2 {
+    color: $purple;
+    margin-bottom: 2rem;
+  }
 }
 
-body {
-  font-family: 'Open Sans';
-  font-weight: 100;
+.badge {
+  background-color: $purple;
+  color: white;
+  padding: .3rem .9rem;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: $small-font-size;
+  margin: 1rem .5rem 0 0;
 }

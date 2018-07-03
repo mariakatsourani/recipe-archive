@@ -2,6 +2,20 @@
 layout: base
 ---
 
-{% for recipe in site.recipes %}
-  <h2><a href="{{ recipe.url }}">{{recipe.title }}</a></h2>
-{% endfor %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col d-flex flex-column align-items-center">
+      {% for recipe in site.recipes %}
+        <a href="{{ recipe.url }}" class="recipe">
+          <h2>{{ recipe.title }}</h2>
+          <p class="lead">
+              {{ recipe.content | truncate:100 | markdownify }}
+          </p>
+            {% for category in recipe.category %} 
+              <p class="badge">{{ category }}</p>
+            {% endfor %}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
