@@ -43,3 +43,17 @@ $purple: #6f42c1;
   font-size: $small-font-size;
   margin: 1rem .5rem 0 0;
 }
+
+li {
+  list-style: none;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: $gray-800;
+    transform: rotate(45deg);
+    margin: 0 .8rem .15rem -1rem;
+  }
+}
