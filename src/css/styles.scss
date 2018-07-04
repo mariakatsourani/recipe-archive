@@ -3,45 +3,77 @@
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/type";
-@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/utilities";
 
 $headings-font-family: 'Roboto';
 $font-family-base: 'Open Sans';
+$headings-font-weight: 400;
 
 $purple: #6f42c1;
+$pink: #ffe1cc;
+$yellow: #e5f86b;
+$shadow-gray: #989393;
+
+$box-shadow: 4px 4px 20px -2px $shadow-gray;
+
+h1 {
+  text-transform: uppercase;
+}
+
+/* Home*/
+.home-hero {
+  background-color: $pink;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bg-fruits {
+  position: absolute;
+}
+
+.site-title {
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  padding: 3rem;
+  box-shadow: $box-shadow;
+  border-radius: 2px;
+}
 
 .recipe {
   display: block;
-  border: 2px solid $purple;
-  border-radius: 3px;
-  margin: 3rem;
+  margin-bottom: 2rem;
   padding: 2rem;
-  box-shadow: 10px 10px 0 0 $purple;
+  box-shadow: $box-shadow;
   color: black;
-  transition: all 100ms ease-in;
+  transition: all 180ms ease-in;
   width: 600px;
+  border-radius: 2px;
 
   &:hover {
     text-decoration: none;
-    transform: scale(1.05);
-    box-shadow: 5px 5px 0 0 $purple;
+    transform: translateY(-5px);
+    box-shadow: 4px 10px 20px -2px #989393;
     color: currentColor;
   }
 
   h2 {
-    color: $purple;
     margin-bottom: 2rem;
+    font-weight: 400;
   }
 }
 
 .badge {
-  background-color: $purple;
-  color: white;
+  background-color: $yellow;
   padding: .3rem .9rem;
-  border-radius: 3px;
   display: inline-block;
   font-size: $small-font-size;
   margin: 1rem .5rem 0 0;
+  border-radius: 2px;
+  font-weight: 600;
 }
 
 li {
@@ -50,10 +82,16 @@ li {
   &::before {
     content: '';
     display: inline-block;
-    width: 6px;
-    height: 6px;
-    background: $gray-800;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    border: 2px solid #343a40;
     transform: rotate(45deg);
-    margin: 0 .8rem .15rem -1rem;
+    margin: 0 .8rem 0.07rem -1rem;
   }
+}
+
+/* POST */
+.post-header {
+  background-color: $pink;
 }
