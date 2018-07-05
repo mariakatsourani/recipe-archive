@@ -43,6 +43,10 @@ h1 {
   border-radius: 2px;
 }
 
+.recipe-list {
+  margin-top: 3rem;
+}
+
 .recipe {
   display: block;
   margin-bottom: 2rem;
@@ -63,17 +67,22 @@ h1 {
   h2 {
     margin-bottom: 2rem;
     font-weight: 400;
+    text-transform: uppercase;
   }
 }
 
 .badge {
-  background-color: $yellow;
+  border: 2px solid $yellow;
   padding: .3rem .9rem;
   display: inline-block;
   font-size: $small-font-size;
   margin: 1rem .5rem 0 0;
   border-radius: 2px;
   font-weight: 600;
+
+  &:hover {
+    background-color: $yellow;
+  }
 }
 
 li {
