@@ -7,7 +7,8 @@
 
 $headings-font-family: 'Roboto';
 $font-family-base: 'Open Sans';
-$headings-font-weight: 400;
+$headings-font-weight: 300;
+$h1-font-size: 3rem;
 
 $purple: #6f42c1;
 $pink: #ffe1cc;
@@ -16,9 +17,12 @@ $shadow-gray: #989393;
 
 $box-shadow: 4px 4px 20px -2px $shadow-gray;
 
-h1 {
+h1 { 
   text-transform: uppercase;
+  font-weight: 300;
 }
+
+p { font-weight: 100; }
 
 /* Home*/
 .home-hero {
@@ -38,9 +42,13 @@ h1 {
   text-align: center;
   display: inline-block;
   background-color: white;
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: $box-shadow;
   border-radius: 2px;
+
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 .recipe-list {
