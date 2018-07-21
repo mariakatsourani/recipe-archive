@@ -21,10 +21,14 @@ layout: base
         <a href="{{ recipe.url }}" class="recipe">
           <h2>{{ recipe.title }}</h2>
           <p class="lead">
-              {{ recipe.content | truncate:100 | markdownify }}
+              {{ recipe.content | truncate:150 | markdownify }}
           </p>
+            <p class="badge border border-purple">{{ recipe.cooking_time }}min</p>
             {% for category in recipe.category %} 
-              <p class="badge">{{ category }}</p>
+              <p class="badge border border-yellow">{{ category }}</p>
+            {% endfor %}
+            {% for tag in recipe.tags %} 
+              <p class="badge border border-pink">{{ tag }}</p>
             {% endfor %}
         </a>
       {% endfor %}

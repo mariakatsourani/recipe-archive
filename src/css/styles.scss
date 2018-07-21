@@ -1,114 +1,40 @@
+$purple: #cab6ef;
+$pink: #ffe1cc;
+$yellow: #e5f86b;
+$shadow-gray: #989393;
+
+$border-width: 2px;
+
+@import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/utilities";
+
+@import "header";
+@import "list";
+@import "recipe";
 
 $headings-font-family: 'Roboto';
 $font-family-base: 'Open Sans';
 $headings-font-weight: 300;
 $h1-font-size: 3rem;
 
-$purple: #6f42c1;
-$pink: #ffe1cc;
-$yellow: #e5f86b;
-$shadow-gray: #989393;
-
 $box-shadow: 4px 4px 20px -2px $shadow-gray;
 
-h1 { 
-  text-transform: uppercase;
-  font-weight: 300;
+@each $color, $value in $colors {
+  @include bg-variant(".bg-#{$color}", $value);
 }
 
-p { font-weight: 100; }
-
-/* Home*/
-.home-hero {
-  background-color: $pink;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.bg-fruits {
-  position: absolute;
-}
-
-.site-title {
-  text-align: center;
-  display: inline-block;
-  background-color: white;
-  padding: 2rem;
-  box-shadow: $box-shadow;
-  border-radius: 2px;
-
-  h1 {
-    font-size: 3rem;
+@each $color, $value in $colors {
+  .border-#{$color} {
+    border-color: $value !important;
+    transition: background-color 150ms ease-in;
+    
+    &:hover {
+      background-color: $value;
+    }
   }
-}
-
-.recipe-list {
-  margin-top: 3rem;
-}
-
-.recipe {
-  display: block;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  box-shadow: $box-shadow;
-  color: black;
-  transition: all 180ms ease-in;
-  width: 600px;
-  border-radius: 2px;
-
-  &:hover {
-    text-decoration: none;
-    transform: translateY(-5px);
-    box-shadow: 4px 10px 20px -2px #989393;
-    color: currentColor;
-  }
-
-  h2 {
-    margin-bottom: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-}
-
-.badge {
-  border: 2px solid $yellow;
-  padding: .3rem .9rem;
-  display: inline-block;
-  font-size: $small-font-size;
-  margin: 1rem .5rem 0 0;
-  border-radius: 2px;
-  font-weight: 600;
-
-  &:hover {
-    background-color: $yellow;
-  }
-}
-
-li {
-  list-style: none;
-
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
-    border: 2px solid #343a40;
-    transform: rotate(45deg);
-    margin: 0 .8rem 0.07rem -1rem;
-  }
-}
-
-/* POST */
-.post-header {
-  background-color: $pink;
 }

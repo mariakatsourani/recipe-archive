@@ -1,0 +1,36 @@
+.recipe-list {
+  margin-top: 3rem;
+}
+
+.recipe {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  box-shadow: $box-shadow;
+  color: black;
+  transition: all 180ms ease-in;
+  width: 600px;
+  border-radius: 2px;
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+    box-shadow: 4px 10px 20px -2px #989393;
+    color: currentColor;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.badge {
+  padding: .3rem .9rem;
+  display: inline-block;
+  font-size: $small-font-size;
+  margin: 1rem .5rem 0 0;
+  border-radius: 2px;
+  font-weight: 600;
+}

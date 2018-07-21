@@ -1,0 +1,25 @@
+.home-hero {
+  background-color: $pink;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bg-fruits {
+  position: absolute;
+}
+
+.site-title {
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: $box-shadow;
+  border-radius: 2px;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
