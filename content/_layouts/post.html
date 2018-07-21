@@ -8,5 +8,13 @@ layout: base
 </div>
 
 <div class="container">
+  <ul class="mb-4">
+    {% for ingredient in page.ingredients %}
+      <li>
+        {{ ingredient }}
+      </li>
+    {% endfor %}
+  </ul>
+
   {{ page.content }}
 </div>

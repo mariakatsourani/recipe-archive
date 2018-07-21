@@ -4,18 +4,18 @@ category: [ side ]
 tags: [ brussels-sprouts, gratin ]
 cooking_time: 45
 credit: https://www.simplyrecipes.com/recipes/brussels_sprouts_gratin/
+ingredients:
+  - ca 1kg brussels sprouts, trimmed of outer leaves and sliced in half
+  - 55g pancetta, diced
+  - 1 Tbsp butter
+  - 3 shallots, peeled, h alved, and sliced
+  - 2 Tbsp all purpose flour
+  - 415ml cup whole milk
+  - Pinch of freshly ground nutmeg
+  - Thyme leaves from 2 sprigs of thyme or 1/2 teaspoon dry thyme
+  - 115g of grated Gruyere cheese, divided 85g and 30g
+  - a handful of sultanas
 ---
-
-- ca 1kg brussels sprouts, trimmed of outer leaves and sliced in half
-- 55g pancetta, diced
-- 1 Tbsp butter
-- 3 shallots, peeled, h alved, and sliced
-- 2 Tbsp all purpose flour
-- 415ml cup whole milk
-- Pinch of freshly ground nutmeg
-- Thyme leaves from 2 sprigs of thyme or 1/2 teaspoon dry thyme
-- 115g of grated Gruyere cheese, divided 85g and 30g
-- a handful of sultanas
 
 Blanch the brussels sprouts: Heat a large pot of salted water, 4 quarts of water, 1 Tbsp salt. Blanch the halved brussels sprouts for 3 to 4 minutes, until just barely tender. Remove from pot, drain, rinse with cold water to stop the cooking, set aside.
 
