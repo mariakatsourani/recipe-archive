@@ -1,7 +1,7 @@
 ---
 title: Curried lentil and coconut soup
 category: [ main ]
-tags: [ lentils curry indian ]
+tags: [ lentils, curry, indian ]
 cooking_time: 30
 credit: https://www.theguardian.com/lifeandstyle/2017/nov/25/lentil-recipes-curried-coconut-soup-aubergine-stew-sweet-potato-croquettes-fritters-yotam-ottolenghi
 ---
