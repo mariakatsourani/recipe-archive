@@ -2,36 +2,26 @@
 layout: base
 ---
 
-<div class="container-fluid home-hero">
-  <div class="container bg-fruits">
-    <div class="row">
-      
-    </div>
-  </div>
-  <div class="site-title">
-    <h1 class="">Recipe Archive</h1>
-    <p class="lead">A modern version of grandmas old and worn recipe notebook.</p>
-  </div>
-</div>
-
-<div class="container recipe-list">
-  <div class="row justify-content-center">
-    <div class="col d-flex flex-column align-items-center mt-5">
-      {% for recipe in site.recipes %}
-        <a href="{{ recipe.url }}" class="recipe">
-          <h2>{{ recipe.title }}</h2>
-          <p class="lead">
-              {{ recipe.content | truncate:150 | markdownify }}
-          </p>
-            <p class="badge border border-purple">{{ recipe.cooking_time }}min</p>
-            {% for category in recipe.category %} 
-              <p class="badge border border-yellow">{{ category }}</p>
-            {% endfor %}
-            {% for tag in recipe.tags %} 
-              <p class="badge border border-pink">{{ tag }}</p>
-            {% endfor %}
-        </a>
-      {% endfor %}
+<div class="bg-pink">
+  <div class="container recipe-list text-block">
+    <div class="row justify-content-center">
+      <div class="col d-flex flex-column align-items-center mt-5">
+        {% for recipe in site.recipes %}
+          <a href="{{ recipe.url }}" class="recipe">
+            <h2>{{ recipe.title }}</h2>
+            <p class="lead">
+                {{ recipe.content | truncate:150 | markdownify }}
+            </p>
+              <p class="badge border border-purple">{{ recipe.cooking_time }}min</p>
+              {% for category in recipe.category %} 
+                <p class="badge border border-yellow">{{ category }}</p>
+              {% endfor %}
+              {% for tag in recipe.tags %} 
+                <p class="badge border border-pink">{{ tag }}</p>
+              {% endfor %}
+          </a>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

@@ -1,9 +1,18 @@
 $purple: #cab6ef;
 $pink: #ffe1cc;
 $yellow: #e5f86b;
-$shadow-gray: #989393;
+$blue: #3733bb;
+$gray-600: #989393;
+
+// $map2: (
+//   'salmon': #f573a0,
+//   'violet': #c65dcb
+// );
+
+// $colors: map-merge($colors, $map2);
 
 $border-width: 2px;
+$headings-font-weight: 300;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/bootstrap-grid";
@@ -19,10 +28,9 @@ $border-width: 2px;
 
 $headings-font-family: 'Roboto';
 $font-family-base: 'Open Sans';
-$headings-font-weight: 300;
 $h1-font-size: 3rem;
 
-$box-shadow: 4px 4px 20px -2px $shadow-gray;
+$box-shadow: 4px 4px 20px -2px $gray-600;
 
 @each $color, $value in $colors {
   @include bg-variant(".bg-#{$color}", $value);
@@ -35,6 +43,20 @@ $box-shadow: 4px 4px 20px -2px $shadow-gray;
     
     &:hover {
       background-color: $value;
+    }
+  }
+}
+
+h1 { 
+  text-transform: uppercase;
+}
+
+main {
+  margin-top: 4rem;
+
+  .text-block {
+    @include media-breakpoint-up(md) {
+      max-width: 650px;
     }
   }
 }

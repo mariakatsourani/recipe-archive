@@ -9,7 +9,23 @@
   <script src="/dist/main.js"></script>
 </head>
 
-<body class="">
+<body>
+  <header>
+    <div id="header-bg">
+      {% for i in (1..35) %}
+        <div class="header-bg-stripe" {% if i >= 20 %}d-none d-lg-inline-block{% endif %}"></div>
+      {% endfor %}
+    </div>
+    <div class="home-link">
+      <a class="text-purple" href="/"><h1>Recipe Archive</h1></a>
+    </div>
+    <div id="search">
+      <input id="search-input" type="text" placeholder="Search recipes">
+      <button type="submit">
+        Search
+      </button> 
+    </div>
+  </header>
   <main>
     {{ content }}
   </main>

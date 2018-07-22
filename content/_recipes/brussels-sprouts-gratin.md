@@ -1,7 +1,7 @@
 ---
 title: Brussels Sprouts Gratin
 category: [ side ]
-tags: [ brussels, sprouts, gratin ]
+tags: [ brussels sprouts, gratin ]
 cooking_time: 45
 credit: https://www.simplyrecipes.com/recipes/brussels_sprouts_gratin/
 ingredients:
