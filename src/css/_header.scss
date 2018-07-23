@@ -1,7 +1,7 @@
-$header-height: 130px;
+$header-height: 150px;
 
 header {
-  height: 180px;
+  height: calc(#{$header-height} + 30px);
   z-index: -1;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 80px;
+  height: 90px;
 
   a {
     &:hover {
@@ -39,7 +39,7 @@ header {
 }
 
 #search {
-  transform: translateY(25px);
+  transform: translateY(33px);
   border: 0;
   border-top: 1px solid $blue;
   border-bottom: 1px solid $blue;
@@ -52,6 +52,18 @@ header {
 
   @include media-breakpoint-up(sm) {
     width: 380px;
+  }
+  
+  button {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  img {
+    transform: rotate(45deg) translateY(-5px);
+    width: 48px;
   }
 }
 

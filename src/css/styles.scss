@@ -52,11 +52,16 @@ h1 {
 }
 
 main {
-  margin-top: 4rem;
+  margin-top: 5rem;
 
   .text-block {
     @include media-breakpoint-up(md) {
       max-width: 650px;
     }
   }
+}
+
+//use focus-visible and its polyfill
+*:focus {
+  outline: none !important;
 }

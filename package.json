@@ -19,6 +19,7 @@
     "fuse.js": "^3.2.1"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^0.28.11",
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.0",
