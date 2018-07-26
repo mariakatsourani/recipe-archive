@@ -6,6 +6,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  a {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
 }
 
 .home-link {
@@ -62,8 +68,8 @@ header {
   }
 
   img {
-    transform: rotate(45deg) translateY(-5px);
-    width: 48px;
+    transform: rotate(45deg) translateY(-3px);
+    width: 45px;
   }
 }
 

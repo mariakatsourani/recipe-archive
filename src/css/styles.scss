@@ -28,7 +28,6 @@ $headings-font-weight: 300;
 
 $headings-font-family: 'Roboto';
 $font-family-base: 'Open Sans';
-$h1-font-size: 3rem;
 
 $box-shadow: 4px 4px 20px -2px $gray-600;
 
@@ -45,10 +44,6 @@ $box-shadow: 4px 4px 20px -2px $gray-600;
       background-color: $value;
     }
   }
-}
-
-h1 { 
-  text-transform: uppercase;
 }
 
 main {
