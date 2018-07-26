@@ -1,17 +1,32 @@
 import Fuse from 'fuse.js';
 
-async function getRecipes() {
-  try {
-    const response = await fetch('recipes.json');    
-    const data = await response.json();
-    search(data);
-  }
-  catch (err) {
-    throw new Error('Could not fetch data file.')
-  }
+let data = {};
+
+async function init() {
+    const response = await fetch('recipes.json');
+    data = await response.json();
+    attachListeners();
 }
 
-function search(data) {
+function handleSearch() {
+  const query = document.getElementById('search-input').value;
+  search(data, query);
+}
+
+function attachListeners() {
+  const searchBtn = document.getElementById('search-submit');
+  const searchInput = document.getElementById('search-input');
+
+  searchBtn &&
+    searchBtn.addEventListener('click', handleSearch);
+  searchInput &&
+    searchInput.addEventListener('keypress', e => {
+      if (e.key === "Enter")
+        handleSearch();
+    });
+}
+
+function search(data, query) {
   const options = {
     minMatchCharLength: 3,
     keys: [
@@ -23,8 +38,9 @@ function search(data) {
 
   const fuse = new Fuse(data.recipes, options)
 
-  console.log(fuse.search('curry'))
+  console.log(fuse.search(query))
 }
 
 
-getRecipes();
+init();
+

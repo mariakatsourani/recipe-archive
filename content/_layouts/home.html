@@ -3,24 +3,30 @@ layout: base
 ---
 
 <div class="bg-pink">
-  <div class="container recipe-list text-block">
+  <div class="container text-block">
     <div class="row justify-content-center">
       <div class="col d-flex flex-column align-items-center mt-5">
-        {% for recipe in site.recipes %}
-          <a href="{{ recipe.url }}" class="recipe">
-            <h2>{{ recipe.title }}</h2>
-            <p class="lead">
-                {{ recipe.content | truncate:150 | markdownify }}
-            </p>
-              <p class="badge border border-purple">{{ recipe.cooking_time }}min</p>
-              {% for category in recipe.category %} 
-                <p class="badge border border-yellow">{{ category }}</p>
-              {% endfor %}
-              {% for tag in recipe.tags %} 
-                <p class="badge border border-pink">{{ tag }}</p>
-              {% endfor %}
-          </a>
-        {% endfor %}
+        <div id="recipe-list">
+          {% for recipe in site.recipes %}
+            <a href="{{ recipe.url }}" class="recipe">
+              <h2>{{ recipe.title }}</h2>
+              <p class="lead">
+                  {{ recipe.content | truncate:150 | markdownify }}
+              </p>
+                <p class="badge border border-purple">{{ recipe.cooking_time }}min</p>
+                {% for category in recipe.category %} 
+                  <p class="badge border border-yellow">{{ category }}</p>
+                {% endfor %}
+                {% for tag in recipe.tags %} 
+                  <p class="badge border border-pink">{{ tag }}</p>
+                {% endfor %}
+            </a>
+          {% endfor %}
+        </div>
+        
+        <div id="search-results">
+          
+        </div>
       </div>
     </div>
   </div>
