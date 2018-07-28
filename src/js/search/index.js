@@ -55,7 +55,7 @@ function renderResult(result) {
 function buildResult(r) {
   var parent = document.createElement('a');
   parent.append(r.title);
-  parent.setAttribute('class','search-result');
+  parent.setAttribute('class','search-result hover-ghost');
   parent.setAttribute('href', r.url);
 
   return parent;

@@ -19,13 +19,6 @@ header {
   justify-content: center;
   align-items: flex-end;
   height: 90px;
-
-  a {
-    &:hover {
-      text-decoration: none;
-      text-shadow: 3px 3px $purple;
-    }
-  }
 }
 
 #header-bg {

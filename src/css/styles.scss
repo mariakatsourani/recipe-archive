@@ -61,3 +61,10 @@ main {
 *:focus {
   outline: none !important;
 }
+
+.hover-ghost {
+  &:hover {
+    text-decoration: none;
+    text-shadow: 3px 3px $purple;
+  }
+}
