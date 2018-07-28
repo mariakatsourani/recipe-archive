@@ -20,15 +20,13 @@ function attachListeners() {
   searchBtn &&
     searchBtn.addEventListener('click', handleSearch);
   searchInput &&
-    searchInput.addEventListener('keypress', e => {
-      if (e.key === "Enter")
-        handleSearch();
-    });
+    searchInput.addEventListener('keypress', handleSearch);
 }
 
 function search(data, query) {
   const options = {
     minMatchCharLength: 3,
+    threshold: 0.4,
     keys: [
       'title',
       'categories',
@@ -39,8 +37,29 @@ function search(data, query) {
   const fuse = new Fuse(data.recipes, options)
 
   console.log(fuse.search(query))
+  renderResult(fuse.search(query))
 }
 
+function renderResult(result) {
+  const listContainer = document.getElementById('recipe-list');
+  const resultsContainer = document.getElementById('search-results');
+
+  listContainer.style.display = 'none';
+  resultsContainer.innerHTML = '';
+
+  result.map(r => {
+    resultsContainer.appendChild(buildResult(r));
+  });
+}
+
+function buildResult(r) {
+  var parent = document.createElement('a');
+  parent.append(r.title);
+  parent.setAttribute('class','search-result');
+  parent.setAttribute('href', r.url);
+
+  return parent;
+}
 
 init();
 
