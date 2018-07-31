@@ -52,17 +52,11 @@ header {
   @include media-breakpoint-up(sm) {
     width: 380px;
   }
-  
-  button {
-    border: 0;
-    background-color: transparent;
-    padding: 0;
-    cursor: pointer;
-  }
 
-  img {
+  svg {
     transform: rotate(45deg) translateY(-3px);
     width: 45px;
+    height: 45px;
   }
 }
 
