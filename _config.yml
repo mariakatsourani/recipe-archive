@@ -14,9 +14,6 @@ markdown: kramdown
 
 source: content
 
-plugins:
-  - jekyll-feed
-
 collections:
   recipes:
     output: true
