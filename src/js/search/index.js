@@ -1,26 +1,31 @@
 import Fuse from 'fuse.js';
 
-let data = {};
-
 async function init() {
-    const response = await fetch('recipes.json');
-    data = await response.json();
-    attachListeners();
+  const response = await fetch('recipes.json');
+  const data = await response.json();
+  attachListeners(data);
 }
 
-function handleSearch() {
+function handleSearch(data) {
   const query = document.getElementById('search-input').value;
   search(data, query);
 }
 
-function attachListeners() {
-  const searchBtn = document.getElementById('search-submit');
+function attachListeners(data) {
   const searchInput = document.getElementById('search-input');
+  const listContainer = document.getElementById('recipe-list');
+  const resultsContainer = document.getElementById('search-results');
 
-  searchBtn &&
-    searchBtn.addEventListener('click', handleSearch);
   searchInput &&
-    searchInput.addEventListener('keypress', handleSearch);
+    searchInput.addEventListener('input', () => {
+      if (searchInput.value.length > 0) {
+        resultsContainer.style.display = 'block';
+        handleSearch(data);
+      } else {
+        resultsContainer.style.display = 'none';
+        listContainer.style.display = 'block';
+      }
+    });
 }
 
 function search(data, query) {
@@ -34,10 +39,10 @@ function search(data, query) {
     ]
   };
 
-  const fuse = new Fuse(data.recipes, options)
+  const fuse = new Fuse(data.recipes, options);
 
-  console.log(fuse.search(query))
-  renderResult(fuse.search(query))
+  // console.log(fuse.search(query))
+  renderResult(fuse.search(query));
 }
 
 function renderResult(result) {

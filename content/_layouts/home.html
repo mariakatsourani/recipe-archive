@@ -6,6 +6,7 @@ layout: base
   <div class="container text-block">
     <div class="row justify-content-center">
       <div class="col d-flex flex-column align-items-center mt-5">
+        <div id="search-results"></div>
         <div id="recipe-list">
           {% for recipe in site.recipes %}
             <a href="{{ recipe.url }}" class="recipe">
@@ -22,10 +23,6 @@ layout: base
                 {% endfor %}
             </a>
           {% endfor %}
-        </div>
-        
-        <div id="search-results">
-          
         </div>
       </div>
     </div>
