@@ -10,20 +10,7 @@
 </head>
 
 <body>
-  <header>
-    <div id="header-bg">
-      {% for i in (1..35) %}
-        <div class="header-bg-stripe" {% if i >= 20 %}d-none d-lg-inline-block{% endif %}"></div>
-      {% endfor %}
-    </div>
-    <div class="home-link">
-      <a class="hover-ghost" href="/">Recipe Archive</a>
-    </div>
-    <div id="search">
-      <input id="search-input" type="text" placeholder="Search recipes">
-      {% include broccoli.html %}
-    </div>
-  </header>
+  {% include header.html %}
   <main>
     {{ content }}
   </main>
