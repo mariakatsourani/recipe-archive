@@ -13,13 +13,13 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles.css'
     }),
-    new CopyWebpackPlugin([
-      {
-        context: 'src',
-        from: 'assets',
-        to: 'assets'
-      }
-    ])
+    // new CopyWebpackPlugin([
+    //   {
+    //     context: 'src',
+    //     from: 'assets',
+    //     to: 'assets'
+    //   }
+    // ])
   ],
   module: {
     rules: [
