@@ -1,7 +1,6 @@
 import Fuse from 'fuse.js';
 
 async function init() {
-  console.log(window.jsonUrl)
   const response = await fetch(window.jsonUrl);
   const data = await response.json();
   attachListeners(data);
