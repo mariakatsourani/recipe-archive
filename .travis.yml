@@ -9,7 +9,7 @@ install:
 script:
   - npm run build
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site
+  - bundle exec htmlproofer ./_site --disable-external
 
 # # branch whitelist, only for GitHub Pages
 # branches:
@@ -29,5 +29,6 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
+  local_dir: _site
   on:
     branch: master
