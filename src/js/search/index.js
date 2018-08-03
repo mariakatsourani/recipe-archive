@@ -1,6 +1,7 @@
 import Fuse from 'fuse.js';
 
 async function init() {
+  console.log(window.jsonUrl)
   const response = await fetch(window.jsonUrl);
   const data = await response.json();
   attachListeners(data);
@@ -13,7 +14,7 @@ function handleSearch(data) {
 
 function attachListeners(data) {
   const searchInput = document.getElementById('search-input');
-  const listContainer = document.getElementById('recipe-list');
+  const listContainer = document.getElementById('recipe-container');
   const resultsContainer = document.getElementById('search-results');
 
   searchInput &&
@@ -46,7 +47,7 @@ function search(data, query) {
 }
 
 function renderResult(result) {
-  const listContainer = document.getElementById('recipe-list');
+  const listContainer = document.getElementById('recipe-container');
   const resultsContainer = document.getElementById('search-results');
 
   listContainer.style.display = 'none';

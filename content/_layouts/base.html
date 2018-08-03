@@ -12,12 +12,14 @@
 <body>
   {% include header.html %}
   <main>
+    <div id="search-results" class="text-block mx-auto">
+    </div>
     {{ content }}
   </main>
-  <script src="{{ 'dist/main.js' | absolute_url }}"></script>
   {% capture jsonUrl %}{{ 'recipes.json' | absolute_url }}{% endcapture %}
   <script>
     window.jsonUrl = "{{ jsonUrl }}";
   </script>
+  <script src="{{ 'dist/main.js' | absolute_url }}"></script>
 </body>
 </html>
