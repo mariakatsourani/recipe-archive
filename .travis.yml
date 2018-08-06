@@ -9,7 +9,7 @@ install:
 script:
   - npm run build
   - bundle exec jekyll build
-  # - bundle exec htmlproofer ./_site --disable-external
+  - bundle exec htmlproofer ./_site --disable-external
 
 env:
   global:
