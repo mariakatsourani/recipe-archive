@@ -11,12 +11,12 @@ layout: base
             <a href="{{ recipe.url | absolute_url }}" class="recipe">
               <h2>{{ recipe.title }}</h2>
                 {{ recipe.content | truncate:150 | markdownify }}
-                <p class="badge border border-purple" data-cooking-time="{{ recipe.cooking_time }}">{{ recipe.cooking_time }}min</p>
+                <p class="badge border border-purple" data-badge-term="{{ recipe.cooking_time }}">{{ recipe.cooking_time }}min</p>
                 {% for category in recipe.category %} 
-                  <p class="badge border border-yellow">{{ category }}</p>
+                  <p class="badge border border-yellow" data-badge-term="{{ recipe.category }}">{{ category }}</p>
                 {% endfor %}
                 {% for tag in recipe.tags %} 
-                  <p class="badge border border-pink">{{ tag }}</p>
+                  <p class="badge border border-pink" data-badge-term="{{ tag }}">{{ tag }}</p>
                 {% endfor %}
             </a>
           {% endfor %}

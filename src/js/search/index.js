@@ -41,7 +41,7 @@ function attachListeners(data) {
   badges.map(badge => {
     badge.addEventListener('click', (e) => {
       e.preventDefault();
-      handleSearch(data, badge.dataset.cookingTime);
+      handleSearch(data, badge.dataset.badgeTerm);
     });
   });
 }
