@@ -1,3 +1,5 @@
 import '../css/styles.scss';
 
-import './search'
+import './search';
+
+import './recipe-card';
