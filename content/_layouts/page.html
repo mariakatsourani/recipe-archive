@@ -12,8 +12,9 @@ layout: base
               href="{{ recipe.url | absolute_url }}"
               title="{{ recipe.title }}"
               body="{{ recipe.content | truncate:150 | remove: '<p>' }}"
-              cooking-time="{{ recipe.cooking_time }}"
-              >
+              cooking-time="{{ recipe.cooking_time }}min"
+              categories="{{ recipe.category | join ',' }}"
+              tags="{{ recipe.tags | join ',' }}">
             
             </recipe-card>
 

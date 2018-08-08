@@ -4,12 +4,14 @@ $yellow: #e5f86b;
 $blue: #3733bb;
 $gray-600: #989393;
 
-// $map2: (
-//   'salmon': #f573a0,
-//   'violet': #c65dcb
-// );
+:root {
+  --purple: #cab6ef;
+  --pink: #ffe1cc;
+  --yellow: #e5f86b;
+  --blue: #3733bb;
 
-// $colors: map-merge($colors, $map2);
+  --small-font-size: 80%;
+}
 
 $border-width: 2px;
 $headings-font-weight: 100;
