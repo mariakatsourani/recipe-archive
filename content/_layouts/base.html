@@ -20,6 +20,7 @@
   {% capture jsonUrl %}{{ 'recipes.json' | absolute_url }}{% endcapture %}
   <script>
     window.jsonUrl = "{{ jsonUrl }}";
+    window.envUrl = "{{ '' | absolute_url }}"
   </script>
   <script src="{{ 'dist/main.js' | absolute_url }}"></script>
 </body>

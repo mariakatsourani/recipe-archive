@@ -1,17 +1,13 @@
-import { recipeCardStyle } from './style';
-
 class RecipeCard extends HTMLElement {
   constructor() {
     super();
 
-    var shadow = this.attachShadow({mode: 'open'});
+    const shadow = this.attachShadow({mode: 'open'});
+    const wrapper = document.createElement('span');
+    
+    const link = document.createElement('link');
+    link.setAttribute('href', `${window.envUrl}dist/rc/recipe-card.css`);
 
-    var wrapper = document.createElement('span');
-    
-    
-    const style = document.createElement('style');
-    style.textContent = recipeCardStyle;
-    
     // attach the created elements to the shadow dom
     shadow.appendChild(style);
     shadow.appendChild(wrapper);
