@@ -1,6 +1,6 @@
 ---
 title: Thai red curry
-category: [ main ]
+categories: [ main ]
 tags: [ thai, curry, chicken ]
 cooking_time: 45
 credit: https://www.houseandgarden.co.uk/recipe/thai-red-chicken-curry

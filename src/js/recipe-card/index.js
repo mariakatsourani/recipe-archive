@@ -6,10 +6,12 @@ class RecipeCard extends HTMLElement {
     const wrapper = document.createElement('span');
     
     const link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('type', 'text/css');
     link.setAttribute('href', `${window.envUrl}dist/rc/recipe-card.css`);
 
     // attach the created elements to the shadow dom
-    shadow.appendChild(style);
+    shadow.appendChild(link);
     shadow.appendChild(wrapper);
 
     //title
@@ -34,18 +36,18 @@ class RecipeCard extends HTMLElement {
 
     //categories
     const categoriesRaw = this.getAttribute('categories');
-    const categoriesArray = categoriesRaw.split(' ');
+    const categoriesArray = categoriesRaw.split('-');
 
     categoriesArray.map(s => {
       const category = document.createElement('span');
-      category.setAttribute('class','badge category');
+      category.setAttribute('class', 'badge category');
       category.textContent = s;
       wrapper.appendChild(category);
     });
 
     //tags
     const tagsRaw = this.getAttribute('tags');
-    const tagsArray = tagsRaw.split(' ');
+    const tagsArray = tagsRaw.split('-');
 
     tagsArray.map(s => {
       const tag = document.createElement('span');
