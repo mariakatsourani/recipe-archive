@@ -16,8 +16,8 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         context: 'src',
-        from: 'rc',
-        to: 'rc'
+        from: 'recipe-card/recipe-card.css',
+        to: 'recipe-card'
       }
     ]),
   ],
