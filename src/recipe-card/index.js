@@ -1,8 +1,9 @@
+import { handleSearch } from '../js/search';
 class RecipeCard extends HTMLElement {
   constructor() {
     super();
+    this.shadow = this.attachShadow({mode: 'open'});
 
-    const shadow = this.attachShadow({mode: 'open'});
     // wrapper anchor
     const wrapper = document.createElement('a');
     const href = this.getAttribute('href');
@@ -14,8 +15,8 @@ class RecipeCard extends HTMLElement {
     styleLink.setAttribute('href', `${window.envUrl}dist/recipe-card/recipe-card.css`);
 
     // attach the created elements to the shadow dom
-    shadow.appendChild(styleLink);
-    shadow.appendChild(wrapper);
+    this.shadow.appendChild(styleLink);
+    this.shadow.appendChild(wrapper);
 
     //title
     const h2 = document.createElement('h2');
@@ -59,6 +60,18 @@ class RecipeCard extends HTMLElement {
       wrapper.appendChild(tag);
     });
 
+  }
+
+  connectedCallback() {
+    const badges = Array.from(this.shadow.querySelectorAll('span.badge'));
+
+    badges.map(badge => {
+      badge.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log(badge.textContent)
+        handleSearch(badge.textContent);
+      });
+    });
   }
 }
 

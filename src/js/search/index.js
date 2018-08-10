@@ -1,52 +1,47 @@
 import Fuse from 'fuse.js';
 
-async function init() {
-  const response = await fetch(window.jsonUrl);
-  const data = await response.json();
+let recipeData = {};
 
-  attachListeners(data);
+async function init() {
+  const response = await fetch(`${window.envUrl}recipes.json`);
+  recipeData = await response.json();
+
+  attachListeners();
 }
 
-function getSearchQuery(badgeSearchQuery) {
-  if (badgeSearchQuery) {
-    return badgeSearchQuery;
+function getSearchQuery(query) {
+  if (query) {
+    return query;
   } else {
     return document.getElementById('search-input').value;
   }
 }
 
-function handleSearch(data, badgeSearchQuery) {
+export function handleSearch(badgeSearchQuery) {
+  console.log(badgeSearchQuery)
   const query = getSearchQuery(badgeSearchQuery);
 
-  search(data, query);
+  search(query);
 }
 
-function attachListeners(data) {
+function attachListeners() {
   const searchInput = document.getElementById('search-input');
   const listContainer = document.getElementById('recipe-container');
   const resultsContainer = document.getElementById('search-results');
-  const badges =  Array.from(document.getElementsByClassName('badge'));
 
   searchInput &&
     searchInput.addEventListener('input', () => {
       if (searchInput.value.length > 0) {
         resultsContainer.style.display = 'block';
-        handleSearch(data, undefined);
+        handleSearch(undefined);
       } else {
         resultsContainer.style.display = 'none';
         listContainer.style.display = 'block';
       }
     });
-
-  badges.map(badge => {
-    badge.addEventListener('click', (e) => {
-      e.preventDefault();
-      handleSearch(data, badge.dataset.badgeTerm);
-    });
-  });
 }
 
-function search(data, query) {
+function search(query) {
   const options = {
     minMatchCharLength: 3,
     threshold: 0.4,
@@ -57,7 +52,7 @@ function search(data, query) {
       'cooking_time'
     ]
   };
-  const fuse = new Fuse(data.recipes, options);
+  const fuse = new Fuse(recipeData.recipes, options);
 
   renderResult(fuse.search(query));
 }
