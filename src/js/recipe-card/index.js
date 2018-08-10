@@ -3,15 +3,18 @@ class RecipeCard extends HTMLElement {
     super();
 
     const shadow = this.attachShadow({mode: 'open'});
-    const wrapper = document.createElement('span');
+    // wrapper anchor
+    const wrapper = document.createElement('a');
+    const href = this.getAttribute('href');
+    wrapper.setAttribute('href', href);
     
-    const link = document.createElement('link');
-    link.setAttribute('rel', 'stylesheet');
-    link.setAttribute('type', 'text/css');
-    link.setAttribute('href', `${window.envUrl}dist/rc/recipe-card.css`);
+    const styleLink = document.createElement('link');
+    styleLink.setAttribute('rel', 'stylesheet');
+    styleLink.setAttribute('type', 'text/css');
+    styleLink.setAttribute('href', `${window.envUrl}dist/rc/recipe-card.css`);
 
     // attach the created elements to the shadow dom
-    shadow.appendChild(link);
+    shadow.appendChild(styleLink);
     shadow.appendChild(wrapper);
 
     //title
