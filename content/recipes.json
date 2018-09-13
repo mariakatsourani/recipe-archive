@@ -8,7 +8,7 @@
     "title": "{{ recipe.title }}",
     "cooking_time": "{{ recipe.cooking_time }}",
     "url": "{{ recipe.url | absolute_url }}",
-    "excerpt": "{{ recipe.content | truncate:150 |  remove: '<p>' }}",
+    "body": "{{ recipe.content | truncate:150 |  remove: '<p>' }}",
     {% if recipe.credit %}"credit": "{{ recipe.credit }}"{% endif %},
     {% if recipe.categories %} "categories"  : [
       {% for category in recipe.categories %} "{{ category }}"

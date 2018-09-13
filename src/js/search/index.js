@@ -18,7 +18,6 @@ function getSearchQuery(query) {
 }
 
 export function handleSearch(badgeSearchQuery) {
-  console.log(badgeSearchQuery)
   const query = getSearchQuery(badgeSearchQuery);
 
   search(query);
@@ -70,10 +69,13 @@ function renderResult(result) {
 }
 
 function buildResult(r) {
-  const parent = document.createElement('a');
-  parent.append(r.title);
-  parent.setAttribute('class','search-result hover-ghost');
+  const parent = document.createElement('recipe-card');
+  parent.setAttribute('title', r.title);
   parent.setAttribute('href', r.url);
+  parent.setAttribute('body', r.body);
+  parent.setAttribute('cookingtime', r.cooking_time);
+  parent.setAttribute('categories', r.categories.join('-'));
+  parent.setAttribute('tags', r.tags.join('-'));
 
   return parent;
 }

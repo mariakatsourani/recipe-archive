@@ -1,13 +1,20 @@
 import { handleSearch } from '../js/search';
 class RecipeCard extends HTMLElement {
+  static get observedAttributes() {
+    return [
+      'title', 
+      'href', 
+      'body', 
+      'cookingtime', 
+      'categories', 
+      'tags'
+    ];
+  }
+
   constructor() {
     super();
     this.shadow = this.attachShadow({mode: 'open'});
-
-    // wrapper anchor
-    const wrapper = document.createElement('a');
-    const href = this.getAttribute('href');
-    wrapper.setAttribute('href', href);
+    this.wrapper = document.createElement('a');
     
     const styleLink = document.createElement('link');
     styleLink.setAttribute('rel', 'stylesheet');
@@ -16,51 +23,53 @@ class RecipeCard extends HTMLElement {
 
     // attach the created elements to the shadow dom
     this.shadow.appendChild(styleLink);
-    this.shadow.appendChild(wrapper);
-
-    //title
-    const h2 = document.createElement('h2');
-    const title = this.getAttribute('title');
-    h2.textContent = title;
-    wrapper.appendChild(h2);
-
-    //body
-    const body = document.createElement('div');
-    body.setAttribute('class','body');
-    const bodyText = this.getAttribute('body');
-    body.textContent = bodyText;
-    wrapper.appendChild(body);
-
-    //cooking time
-    const ct = document.createElement('span');
-    ct.setAttribute('class','badge cooking-time');
-    const mins = this.getAttribute('cooking-time');
-    ct.textContent = mins;
-    wrapper.appendChild(ct);
-
-    //categories
-    const categoriesRaw = this.getAttribute('categories');
-    const categoriesArray = categoriesRaw.split('-');
-
-    categoriesArray.map(s => {
-      const category = document.createElement('span');
-      category.setAttribute('class', 'badge category');
-      category.textContent = s;
-      wrapper.appendChild(category);
-    });
-
-    //tags
-    const tagsRaw = this.getAttribute('tags');
-    const tagsArray = tagsRaw.split('-');
-
-    tagsArray.map(s => {
-      const tag = document.createElement('span');
-      tag.setAttribute('class','badge tag');
-      tag.textContent = s;
-      wrapper.appendChild(tag);
-    });
-
+    this.shadow.appendChild(this.wrapper); 
   }
+
+  attributeChangedCallback(attr, oldValue, newValue) {
+    switch(attr) {
+      case 'title':
+        const h2 = document.createElement('h2');
+        h2.textContent = newValue;
+        this.wrapper.appendChild(h2);
+        break;
+      case 'href':
+        this.wrapper.setAttribute('href', newValue);
+        break;
+      case 'body':
+        const body = document.createElement('div');
+        body.setAttribute('class','body');
+        body.textContent = newValue;
+        this.wrapper.appendChild(body);
+        break;
+      case 'cookingtime':
+        const ct = document.createElement('span');
+        ct.setAttribute('class','badge cooking-time');
+        ct.textContent = newValue;
+        this.wrapper.appendChild(ct);
+        break;
+      case 'categories':
+        const categoriesArray = newValue.split('-');
+    
+        categoriesArray.map(s => {
+          const category = document.createElement('span');
+          category.setAttribute('class', 'badge category');
+          category.textContent = s;
+          this.wrapper.appendChild(category);
+        });
+        break;
+      case 'tags':
+        const tagsArray = newValue.split('-');
+    
+        tagsArray.map(s => {
+          const tag = document.createElement('span');
+          tag.setAttribute('class','badge tag');
+          tag.textContent = s;
+          this.wrapper.appendChild(tag);
+        });
+        break;
+    }
+  }   
 
   connectedCallback() {
     const badges = Array.from(this.shadow.querySelectorAll('span.badge'));
@@ -68,7 +77,6 @@ class RecipeCard extends HTMLElement {
     badges.map(badge => {
       badge.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(badge.textContent)
         handleSearch(badge.textContent);
       });
     });
