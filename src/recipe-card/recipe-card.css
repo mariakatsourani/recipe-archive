@@ -1,13 +1,25 @@
 a {
+  display: block;
   text-decoration: none;
   color: black;
   font-weight: 100;
+  transition: all 180ms ease-in;
+  border-radius: 2px;
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+a:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
+  box-shadow: 4px 10px 20px -2px #989393;
+  color: currentColor;
 }
 h2 {
-  margin: 0 0 1.5rem;
+  margin-bottom: 2rem;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 2rem;
 }
 .body {
   margin-bottom: 1rem;

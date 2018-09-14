@@ -27,15 +27,18 @@ function attachListeners() {
   const searchInput = document.getElementById('search-input');
   const listContainer = document.getElementById('recipe-container');
   const resultsContainer = document.getElementById('search-results');
+  const recipeWrapper = document.getElementsByClassName('bg-pink')[0];
 
   searchInput &&
     searchInput.addEventListener('input', () => {
       if (searchInput.value.length > 0) {
         resultsContainer.style.display = 'block';
+        recipeWrapper.classList.add('bg-yellow');
         handleSearch(undefined);
       } else {
         resultsContainer.style.display = 'none';
         listContainer.style.display = 'block';
+        recipeWrapper.classList.remove('bg-yellow');
       }
     });
 }
