@@ -1,5 +1,6 @@
 ---
 title: Brussels Sprouts Gratin
+date: 2017-01-01
 categories: [ side ]
 tags: [ "brussels sprouts", gratin ]
 cooking_time: 45

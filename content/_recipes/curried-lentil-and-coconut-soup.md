@@ -1,5 +1,6 @@
 ---
 title: Curried lentil and coconut soup
+date: 2017-01-01
 categories: [ main ]
 tags: [ lentils, curry, indian ]
 cooking_time: 30

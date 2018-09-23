@@ -1,5 +1,6 @@
 ---
 title: Grape must jelly (Μουσταλευριά)
+date: 2018-09-23
 categories: [ dessert ]
 tags: [ grapes, greek, grandma ]
 cooking_time: 30
