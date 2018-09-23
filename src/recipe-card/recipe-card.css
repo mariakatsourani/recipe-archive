@@ -40,6 +40,10 @@ h2 {
 .cooking-time:hover {
   background-color: var(--purple);
 }
+.cooking-time::after {
+  display: inline;
+  content: 'min';
+}
 .category {
   border-color: var(--yellow);
 }
