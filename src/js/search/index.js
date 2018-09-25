@@ -3,7 +3,7 @@ import Fuse from 'fuse.js';
 let recipeData = {};
 
 async function init() {
-  const response = await fetch(`${window.envUrl}recipes.json`);
+  const response = await fetch(`${window.envUrl}/recipes.json`);
   recipeData = await response.json();
 
   attachListeners();
