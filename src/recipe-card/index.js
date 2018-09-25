@@ -19,7 +19,7 @@ class RecipeCard extends HTMLElement {
     const styleLink = document.createElement('link');
     styleLink.setAttribute('rel', 'stylesheet');
     styleLink.setAttribute('type', 'text/css');
-    styleLink.setAttribute('href', `${window.envUrl}dist/recipe-card/recipe-card.css`);
+    styleLink.setAttribute('href', `${window.envUrl}/dist/recipe-card/recipe-card.css`);
 
     // attach the created elements to the shadow dom
     this.shadow.appendChild(styleLink);
