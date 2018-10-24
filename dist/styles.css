@@ -3,7 +3,8 @@
   --pink: #ffe1cc;
   --yellow: #e5f86b;
   --blue: #3733bb;
-  --small-font-size: 80%; }
+  --small-font-size: 80%;
+  --box-shadow: 4px 4px 20px -2px #989393; }
 
 /*!
  * Bootstrap Grid v4.1.1 (https://getbootstrap.com/)
