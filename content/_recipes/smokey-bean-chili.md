@@ -12,6 +12,7 @@ ingredients:
   - 2 tsp ground cumin
   - 2 tsp ground corriander
   - 1 tsp chili powder
+  - 1 tsp smoked paprika 
   - 1 tbsp tomato puree
   - 2 tbsp BBQ sauce
   - 1 cinnamon stick
