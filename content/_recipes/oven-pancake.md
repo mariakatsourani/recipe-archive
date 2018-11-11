@@ -1,5 +1,5 @@
 ---
-title: Oven pancake (Ungspankaka)
+title: Oven pancake (Ugnspannkaka)
 date: 2018-11-11
 categories: [ main  ]
 tags: [ eggs, mushrooms ]
