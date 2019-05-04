@@ -14,7 +14,7 @@ ingredients:
   - 1 tsp vanilla
 ---
 
-Prehead overn to 205C.
+Prehead overn to 205°C.
 
 Mix cream cheese with sugar until sugar is dissolved.
 
