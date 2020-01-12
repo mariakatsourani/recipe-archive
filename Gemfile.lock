@@ -93,6 +93,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bundler
   html-proofer
   jekyll (~> 3.8.3)
   tzinfo-data
