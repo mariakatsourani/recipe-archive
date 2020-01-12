@@ -20,7 +20,7 @@ ingredients:
   - 1 egg
   - 0.5dl pine nuts
   - 250gr mozzarella
- ---
+---
 
 Prehead the oven to 200°C. Cook the rutabaga with the olive oil and some salt for 25 minutes.
 
