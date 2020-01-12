@@ -2,7 +2,7 @@
 title: Lasgne with rutabaga and cheeses
 date: 2020-01-12
 categories: [ main ]
-tags: [ pasta ]
+tags: [ pasta, cheese, mushrooms ]
 cooking_time: 60
 ingredients:
   - 1 big rutabaga sliced in 1cm thick circles
