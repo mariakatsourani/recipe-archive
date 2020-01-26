@@ -3,7 +3,7 @@ rvm:
   - 2.4.1
 
 before_install:
-  - gem update bundler
+  - bundle update --bundler
 
 install:
   - bundle install
