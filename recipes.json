@@ -612,7 +612,7 @@
     "cooking_time": "75",
     "url": "https://mariakatsourani.github.io/recipe-archive/recipes/burnt-cheese-cake/",
     "body": "Prehead overn to 205°C.Mix cream cheese with sugar until sugar is dissolved.Add one egg at a time to the cheese mix and mix to inc...",
-    
+    "credit": "https://www.bonappetit.com/recipe/basque-burnt-cheesecake",
      "categories"  : [
        "dessert"
         
@@ -763,6 +763,400 @@
        "handful of raisins"
         ,
        "handful of sliced almonds"
+        
+      
+      ]
+    
+  }
+
+  ,
+
+
+
+  {
+    "title": "Vietnamese banana cake",
+    "cooking_time": "90",
+    "url": "https://mariakatsourani.github.io/recipe-archive/recipes/banana-bread/",
+    "body": "Preheat oven to 180°.Coat loaf pan with butter.Whisk flour, baking soda, and salt in a medium bowl.Using an electric mixer ...",
+    "credit": "https://www.bonappetit.com/recipe/banana-bread",
+     "categories"  : [
+       "dessert"
+        
+      
+      ]
+    ,
+     "tags"  : [
+       "vietnamese"
+        ,
+       "banana"
+        
+      
+      ]
+    ,
+     "ingredients"  : [
+       "425 ml all-purpose flour"
+        ,
+       "1 1/4 tsp baking soda"
+        ,
+       "3/4 tsp salt"
+        ,
+       "285 ml dark brown sugar"
+        ,
+       "190 ml mascarpone, Greek yogurt, or sour cream"
+        ,
+       "55 g unsalted butter, room temperature"
+        ,
+       "2 large eggs"
+        ,
+       "4 large very ripe bananas, mashed"
+        ,
+       "140 g chocolate, chopped (optional)"
+        ,
+       "140 g walnuts, chopped (optional)"
+        
+      
+      ]
+    
+  }
+
+  ,
+
+
+
+  {
+    "title": "Feta and scallion dip",
+    "cooking_time": "15",
+    "url": "https://mariakatsourani.github.io/recipe-archive/recipes/feta-scallion-dip/",
+    "body": "Juice 1 whole lemon to get 3 tablespoons juice and set aside. Cut the remaining 1/2 lemon into 3 to 4 thin slices.Heat the broiler and li...",
+    "credit": "https://cooking.nytimes.com/recipes/1019747-lemony-whipped-feta-with-charred-scallions",
+     "categories"  : [
+       "side"
+        
+      
+      ]
+    ,
+     "tags"  : [
+       "feta"
+        
+      
+      ]
+    ,
+     "ingredients"  : [
+       "1 1/2 lemons"
+        ,
+       "1 bunch scallions, trimmed and halved crosswise"
+        ,
+       "95 ml plus 3 tablespoons olive oil"
+        ,
+       "280 g feta cheese, broken into large pieces (about 2 1/2 to 3 cups)"
+        ,
+       "110 g cream cheese or heavy cream"
+        ,
+       "1/4 tsp black pepper, plus more for garnish"
+        ,
+       "1/4 tsp cayenne, plus more for garnish"
+        ,
+       "1 tablespoon hot water"
+        
+      
+      ]
+    
+  }
+
+  ,
+
+
+
+  {
+    "title": "Halloumi Stroganoff",
+    "cooking_time": "15",
+    "url": "https://mariakatsourani.github.io/recipe-archive/recipes/halloumi-stroganoff/",
+    "body": "Roughly chop the onion and pepper and fry in a pan. Move to a plate.Cut the halloumi and fry in a very hot pan until it is golden....",
+    "credit": "https://www.landleyskok.se/recept/halloumistroganoff",
+     "categories"  : [
+       "main"
+        
+      
+      ]
+    ,
+     "tags"  : [
+       "stew"
+        
+      
+      ]
+    ,
+     "ingredients"  : [
+       "1 onion"
+        ,
+       "400g halloumi"
+        ,
+       "1 red pepper"
+        ,
+       "1 dl tomato past"
+        ,
+       "2 tbsp pesto with sundried tomato"
+        ,
+       "3 tbsp dijon"
+        ,
+       "4-5 dl cream"
+        
+      
+      ]
+    
+  }
+
+  ,
+
+
+
+  {
+    "title": "Katsu Curry",
+    "cooking_time": "45",
+    "url": "https://mariakatsourani.github.io/recipe-archive/recipes/katsu-curry/",
+    "body": "To make the curry sauce, heat 1 tbsp oil in a pan, cook the onions and chopped carrots until the onions are soft about 8 mins.Add the gar...",
+    "credit": "https://www.bbcgoodfood.com/recipes/you-it-katsu-curry",
+     "categories"  : [
+       "main"
+        
+      
+      ]
+    ,
+     "tags"  : [
+       "asian"
+        ,
+       "curry"
+        
+      
+      ]
+    ,
+     "ingredients"  : [
+       "4 tbsp rapeseed oil"
+        ,
+       "400 g rice, cooked"
+        ,
+       "1/2 large cucumber, peeled into ribbons"
+        ,
+       "lime wedges, to serve"
+        ,
+       "1 tbsp rapeseed oil"
+        ,
+       "2 onions, chopped"
+        ,
+       "2 large carrots, chopped"
+        ,
+       "2 garlic cloves, crushed"
+        ,
+       "thumb-sized piece ginger, finely chopped"
+        ,
+       "1 tbsp curry powder"
+        ,
+       "1/2 tsp ground turmeric"
+        ,
+       "400ml can coconut milk"
+        ,
+       "2 tsp maple syrup"
+        ,
+       "1 tbsp cornflour"
+        ,
+       "300g block firm tofu"
+        ,
+       "200g breadcrumbs"
+        
+      
+      ]
+    
+  }
+
+  ,
+
+
+
+  {
+    "title": "Okonomiyaki",
+    "cooking_time": "45",
+    "url": "https://mariakatsourani.github.io/recipe-archive/recipes/okonomiyaki/",
+    "body": "Whisk the flour, baking powder and a pinch of salt in a large mixing bowl.Add the eggs, stock and soy sauce and whisk until smooth.<p...",
+    "credit": "https://www.marionskitchen.com/japanese-sweet-potato-okonomiyaki/",
+     "categories"  : [
+       "main"
+        
+      
+      ]
+    ,
+     "tags"  : [
+       "japanese"
+        ,
+       "cabbage"
+        
+      
+      ]
+    ,
+     "ingredients"  : [
+       "280 ml plain flour"
+        ,
+       "1/2 tsp baking powder"
+        ,
+       "210 ml vegetable stock"
+        ,
+       "3 eggs"
+        ,
+       "1 tbsp soy sauce"
+        ,
+       "850 ml Chinese cabbage, shredded"
+        ,
+       "100 g sweet potato, peeled, coarsely grated"
+        ,
+       "half bunch spring onions, finely sliced"
+        ,
+       "140 ml vegetable oil"
+        ,
+       "Japanese tonkatsu sauce to serve"
+        ,
+       "Japanese Kewpie mayonnaise to serve"
+        ,
+       "Nori flakes or nori furikake to serve"
+        
+      
+      ]
+    
+  }
+
+  ,
+
+
+
+  {
+    "title": "Syrniki (Russian pancakes)",
+    "cooking_time": "30",
+    "url": "https://mariakatsourani.github.io/recipe-archive/recipes/syrniki/",
+    "body": "Beat the egg in a large bowl. Add the cheese, flour, sugar,vanilla, and a dash of salt.Mix thoroughly until the ingredients are well mixe...",
+    "credit": "https://www.wikihow.com/Make-Syrniki",
+     "categories"  : [
+       "side"
+        ,
+       "dessert"
+        
+      
+      ]
+    ,
+     "tags"  : [
+       "pancakes"
+        
+      
+      ]
+    ,
+     "ingredients"  : [
+       "300 g kvarg"
+        ,
+       "50 g flour, plus extra for dusting"
+        ,
+       "1 egg"
+        ,
+       "40 g sugar"
+        ,
+       "1/2 teaspoon (2.5 mL) vanilla extract"
+        ,
+       "Sour cream, fruit jam to serve"
+        
+      
+      ]
+    
+  }
+
+  ,
+
+
+
+  {
+    "title": "Thai style noodles",
+    "cooking_time": "15",
+    "url": "https://mariakatsourani.github.io/recipe-archive/recipes/thai-style-noodles/",
+    "body": "Boil noodles. When cooked toss with sesame oil.Add oil to a pan and fry the cabbage over high heat until just starting to char. Then add ...",
+    "credit": "https://www.marionskitchen.com/15-minute-garlic-prawn-udon/",
+     "categories"  : [
+       "main"
+        
+      
+      ]
+    ,
+     "tags"  : [
+       "noodles"
+        ,
+       "thai"
+        ,
+       "asian"
+        
+      
+      ]
+    ,
+     "ingredients"  : [
+       "400 g noodles"
+        ,
+       "1 tsp sesame oil"
+        ,
+       "2 tbsp vegetable oil"
+        ,
+       "2 heaped cups cabbage, sliced"
+        ,
+       "1 tsp sugar"
+        ,
+       "2 1/2 tbsp soy sauce"
+        ,
+       "4 garlic cloves, finely chopped"
+        ,
+       "4 eggs"
+        ,
+       "1/2 tsp chilli flakes"
+        ,
+       "3 tbsp oyster sauce"
+        ,
+       "3 spring onions, sliced"
+        
+      
+      ]
+    
+  }
+
+  ,
+
+
+
+  {
+    "title": "Vietnamese banana cake",
+    "cooking_time": "15",
+    "url": "https://mariakatsourani.github.io/recipe-archive/recipes/vietnamese-banana-cake/",
+    "body": "Slice the bananas thinly (ca 1cm).Place bananas in a medium bowl and mix gently with the sugar. Let sit for 30 minutes.Preheat ove...",
+    "credit": "http://www.thetummytrain.com/2017/06/09/vietnamese-banana-cake-banh-chuoi-nuong-hanoi-travel-video/",
+     "categories"  : [
+       "dessert"
+        
+      
+      ]
+    ,
+     "tags"  : [
+       "vietnamese"
+        ,
+       "banana"
+        
+      
+      ]
+    ,
+     "ingredients"  : [
+       "3 large bananas, ripe"
+        ,
+       "30 g sugar"
+        ,
+       "3 large eggs"
+        ,
+       "190 g sweetened condensed milk"
+        ,
+       "125 g unsalted butter, melted and cooled"
+        ,
+       "100 g flour"
+        ,
+       "1/2 teaspoon vanilla"
+        ,
+       "Pinch of salt"
         
       
       ]
