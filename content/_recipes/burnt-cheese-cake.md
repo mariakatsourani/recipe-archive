@@ -1,9 +1,10 @@
 ---
 title: Burnt Cheese Cake
 date: 2019-05-04
-categories: [ dessert ]
-tags: [ cheese ]
+categories: [dessert]
+tags: [cheese]
 cooking_time: 75
+credit: https://www.bonappetit.com/recipe/basque-burnt-cheesecake
 ingredients:
   - 450g cream cheese
   - 280ml double cream
