@@ -1,8 +1,8 @@
 ---
-title: Vietnamese banana cake
+title: Banana bread
 date: 2020-06-03
 categories: [dessert]
-tags: [vietnamese, banana]
+tags: [banana, walnuts]
 cooking_time: 90
 credit: https://www.bonappetit.com/recipe/banana-bread
 ingredients:
