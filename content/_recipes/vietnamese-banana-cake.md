@@ -20,7 +20,7 @@ Slice the bananas thinly (ca 1cm).
 
 Place bananas in a medium bowl and mix gently with the sugar. Let sit for 30 minutes.
 
-Preheat oven to 200°. Grease a 6-inch pan and generously coat with flour.
+Preheat oven to 200°. Grease a 15 cm wide pan and generously coat with flour.
 
 In another large bowl, whisk the eggs until smooth. Add condensed milk and butter and beat until well combined.
 
@@ -28,6 +28,6 @@ Stir in the flour, vanilla, and salt until fully mixed.
 
 Gently fold in the sweetened bananas until well-distributed through the batter.
 
-Pour the batter into the prepared cake pan (15 cm wide).
+Pour the batter into the prepared cake pan.
 
 Bake the cake for about 40 minutes until golden brown and a toothpick inserted into the center comes out clean.
