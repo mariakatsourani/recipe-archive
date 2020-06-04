@@ -20,7 +20,9 @@ Slice the bananas thinly (ca 1cm).
 
 Place bananas in a medium bowl and mix gently with the sugar. Let sit for 30 minutes.
 
-Preheat oven to 200°. Grease a 15 cm wide pan and generously coat with flour.
+Preheat oven to 200°.
+
+Grease a 15 cm wide pan.
 
 In another large bowl, whisk the eggs until smooth. Add condensed milk and butter and beat until well combined.
 
