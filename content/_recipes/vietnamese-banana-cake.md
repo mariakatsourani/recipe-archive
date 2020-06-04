@@ -3,7 +3,7 @@ title: Vietnamese banana cake
 date: 2020-06-03
 categories: [dessert]
 tags: [vietnamese, banana]
-cooking_time: 15
+cooking_time: 60
 credit: http://www.thetummytrain.com/2017/06/09/vietnamese-banana-cake-banh-chuoi-nuong-hanoi-travel-video/
 ingredients:
   - 3 large bananas, ripe
