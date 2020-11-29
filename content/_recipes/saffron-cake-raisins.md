@@ -3,7 +3,7 @@ title: Saffron cake with raisins, browned butter and almond
 date: 2020-11-29
 categories: [ main ]
 tags: [ dessert, saffron ]
-cooking_time: 60
+cooking_time: 75
 ingredients:
   - 4.5dl powdered sugar
   - 190g almond meal
