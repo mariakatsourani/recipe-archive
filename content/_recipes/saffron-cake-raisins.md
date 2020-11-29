@@ -14,6 +14,7 @@ ingredients:
   - 70g whole almonds
   - 60g raisins
   - pinch of salt
+credit: Hemlagat, nr4/2020
 ---
 
 Preheat the oven to 180°.
