@@ -4,28 +4,35 @@ date: 2020-06-03
 categories: [main]
 tags: [japanese, cabbage]
 cooking_time: 45
-credit: https://www.marionskitchen.com/japanese-sweet-potato-okonomiyaki/
+credit: https://www.joshuaweissman.com/post/okonomiyaki
 ingredients:
-  - 280 ml plain flour
-  - 1/2 tsp baking powder
-  - 210 ml vegetable stock
-  - 3 eggs
-  - 1 tbsp soy sauce
-  - 850 ml Chinese cabbage, shredded
-  - 100 g sweet potato, peeled, coarsely grated
-  - half bunch spring onions, finely sliced
-  - 140 ml vegetable oil
-  - Japanese tonkatsu sauce to serve
-  - Japanese Kewpie mayonnaise to serve
-  - Nori flakes or nori furikake to serve
+  - 150 g plain flour
+  - 1/4 tsp baking powder
+  - 120 ml dashi stock
+  - 4 eggs
+  - 300 g cooked shrimp
+  - 1/2 medium cabbage, shredded
+  - 1 spring onion, finely sliced
+  - 1/2 can corn
+  - Okonomiyaki sauce to serve
+    - 50g ketchup
+    - 2 tbsp Worcestershire sauce
+    - 1 tbsp soy sauce
+    - 1 tbsp honey
+    - 2 tsp dark sirup
+    - 1 tbsp bbq sauce
+  - Japanese mayonnaise to serve
+  - Nori or bonito flakes to serve
 ---
 
-Whisk the flour, baking powder and a pinch of salt in a large mixing bowl.
+To make the sauce
 
-Add the eggs, stock and soy sauce and whisk until smooth.
+Massage the cabbage with some salt, to soften it.
 
-Add the cabbage, sweet potato and spring onions and mix to combine.
+Whisk the flour, baking powder, eggs and dashi in a large mixing bowl.
 
-Heat 1 tablespoon of the oil in a large non-stick frying pan over medium heat. Add 1 cupful of the batter and shape into a thick round pancake. Cook for 3 minutes on each side or until golden.
+Add the cabbage, corn, shrimp and spring onions and mix to combine.
 
-Transfer to a plate lined with paper towel. Drizzle with the tonkatsu sauce and the mayo and sprinkle with spring onions and furikake.
+Heat 1 tablespoon of oil in a large pan over medium heat. Add the batter and shape into a thick round pancake. Cook for 6 minutes on each side with a lid on. Flip and cook for another 4-6 minutes.
+
+Drizzle with the tonkatsu sauce and the mayo and sprinkle with spring onions and bonito or nori.
