@@ -1,5 +1,5 @@
 ---
-title: Zucchini Fritters (Κολολυθοκεφτέδες)
+title: Zucchini Fritters (Κολοκυθοκεφτέδες)
 date: 2021-07-18
 categories: [side]
 tags: [greek, summer]
