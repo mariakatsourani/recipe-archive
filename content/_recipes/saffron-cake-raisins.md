@@ -17,20 +17,18 @@ ingredients:
 credit: Hemlagat, nr4/2020
 ---
 
-Preheat the oven to 180°.
+Preheat the oven to 180°. Butter the form and dust it with some almond meal.
 
-Soak the raisins in hot water for 15 minutes.
+Soak the raisins in hot water (or spirit of your choice) for 15 minutes.
 
-Butter the form and dust it with some almond meal.
+Roast the almonds in a pan until golden.
 
-Roat the whole almonds in a pan until golden.
-
-Brwon the butter in a pot and lace the pot in a cold water bath to stop the cooking process.
+Brown the butter in a pot. Then place the pot in a cold water bath to stop the cooking process.
 
 Add the saffron and raisins to the butter and let it sit for 15 minutes.
 
 Add all the dry ingredients in a bowl including the whole almonds.
 
-Add the eggs to the dry inredients and then the butter. Mix well.
+Beat the eggs well and mix in the saffron butter. Add the wet inredients to the dry and mix well.
 
-Pour the batter into the form and bake for 35-45 minutes (or until inside temperature reaches 96°.
+Pour the batter into the form and bake for 35-45 minutes or until inside temperature reaches 96°.
