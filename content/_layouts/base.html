@@ -1,25 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    {% if page.title  %} {{ page.title }} - {% endif %}
-    The Recipe Archive</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-  <link href="{{ 'dist/styles.css' | absolute_url }}" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if page.title %} {{ page.title }} - {% endif %} The Recipe Archive
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto"
+      rel="stylesheet"
+    />
+    <link href="{{ 'dist/styles.css' | absolute_url }}" rel="stylesheet" />
+  </head>
 
-<body>
-  {% include header.html %}
-  <main>
-    {{ content }}
-    {% include search_results.html %}
-  </main>
-  <script>
-    window.envUrl = "{{ '' | absolute_url }}"
-  </script>
-  <script src="{{ 'dist/main.js' | absolute_url }}"></script>
-</body>
+  <body>
+    {% include header.html %}
+    <main>{{ content }} {% include search_results.html %}</main>
+    <script>
+      window.envUrl = "{{ '' | absolute_url }}";
+    </script>
+    <script src="{{ 'dist/main.js' | absolute_url }}"></script>
+  </body>
 </html>
