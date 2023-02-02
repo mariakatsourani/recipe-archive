@@ -11,15 +11,12 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto"
       rel="stylesheet"
     />
-    <link href="{{ 'dist/styles.css' | absolute_url }}" rel="stylesheet" />
+    <link href="{{ 'assets/css/main.css' | absolute_url }}" rel="stylesheet" />
   </head>
 
   <body>
     {% include header.html %}
-    <main>{{ content }} {% include search_results.html %}</main>
-    <script>
-      window.envUrl = "{{ '' | absolute_url }}";
+    <main>{{ content }}</main>
     </script>
-    <script src="{{ 'dist/main.js' | absolute_url }}"></script>
   </body>
 </html>

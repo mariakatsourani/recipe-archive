@@ -49,9 +49,9 @@ header {
   display: flex;
   justify-content: space-between;
 
-  @include media-breakpoint-up(sm) {
-    width: 380px;
-  }
+  // @include media-breakpoint-up(sm) {
+  //   width: 380px;
+  // }
 
   svg {
     transform: rotate(45deg) translateY(-3px);

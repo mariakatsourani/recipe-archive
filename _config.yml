@@ -17,3 +17,6 @@ defaults:
       type: recipes
     values:
       layout: post
+
+sass:
+  sass_dir: _sass

@@ -1,0 +1,60 @@
+$purple: #cab6ef;
+$pink: #ffe1cc;
+$yellow: #e5f86b;
+$blue: #3733bb;
+$gray-600: #989393;
+
+:root {
+  --purple: #cab6ef;
+  --pink: #ffe1cc;
+  --yellow: #e5f86b;
+  --blue: #3733bb;
+
+  --small-font-size: 80%;
+  --box-shadow: 4px 4px 20px -2px #989393;
+}
+
+$border-width: 2px;
+$headings-font-weight: 100;
+
+$headings-font-family: "Roboto";
+$font-family-base: "Open Sans";
+
+$box-shadow: 4px 4px 20px -2px $gray-600;
+
+// @each $color, $value in $colors {
+//   @include bg-variant(".bg-#{$color}", $value);
+// }
+
+// @each $color, $value in $colors {
+//   .border-#{$color} {
+//     border-color: $value !important;
+//     transition: background-color 150ms ease-in;
+
+//     &:hover {
+//       background-color: $value;
+//     }
+//   }
+// }
+
+main {
+  margin-top: 5rem;
+
+  .text-block {
+    // @include media-breakpoint-up(md) {
+    //   max-width: 650px;
+    // }
+  }
+}
+
+//use focus-visible and its polyfill
+*:focus {
+  outline: none !important;
+}
+
+.hover-ghost {
+  &:hover {
+    text-decoration: none;
+    text-shadow: 3px 3px $purple;
+  }
+}

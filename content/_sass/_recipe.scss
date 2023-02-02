@@ -1,0 +1,91 @@
+.post-header {
+  border-bottom: 5px $yellow solid;
+}
+
+p {
+  font-weight: 100;
+}
+
+li {
+  list-style: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    border: 2px solid #343a40;
+    transform: rotate(45deg);
+    margin: 0 0.8rem 0.07rem -1rem;
+  }
+}
+
+.recipe {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  transition: all 180ms ease-in;
+  border-radius: 2px;
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.recipe:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
+  box-shadow: 4px 10px 20px -2px #989393;
+  color: currentColor;
+}
+
+.recipe-title {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.recipe-body {
+  margin-bottom: 1rem;
+}
+
+.recipe-badge {
+  padding: 0.3rem 0.9rem;
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin: 1rem 0.5rem 0 0;
+  border-radius: 2px;
+  font-weight: 600;
+  transition: background-color 150ms ease-in;
+  border: 2px solid;
+}
+
+.recipe-cooking-time {
+  border-color: $purple;
+
+  &:hover {
+    background-color: $purple;
+  }
+
+  &::after {
+    display: inline;
+    content: "min";
+  }
+}
+
+.recipe-category {
+  border-color: $yellow;
+
+  &:hover {
+    background-color: $yellow;
+  }
+}
+
+.recipe-tag {
+  border-color: $pink;
+  &:hover {
+    background-color: $pink;
+  }
+}

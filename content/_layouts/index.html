@@ -1,0 +1,36 @@
+---
+layout: base
+---
+
+<div class="bg-pink pb-5">
+  <div class="container text-block">
+    <div class="row justify-content-center">
+      <div class="col d-flex flex-column align-items-center mt-5">
+        <div id="recipe-container">
+          {% assign recipes = (site.recipes | sort: 'date') | reverse %} {% for
+          recipe in recipes %}
+          <a class="recipe" href="{{ recipe.url | absolute_url }}">
+            <div class="recipe-title">{{ recipe.title }}</div>
+            <div class="recipe-body">
+              {{ recipe.content | strip_newlines | truncate:150 | remove: '
+              <p>' | remove: '</p>
+              ' }}
+            </div>
+            <div class="recipe-badge recipe-cooking-time">
+              {{ recipe.cooking_time }}
+            </div>
+            <span class="recipe-categories"
+              >{% for category in recipe.categories %}
+              <span class="recipe-badge">{{ category }}</span>{% endfor %}</span
+            >
+            <span class="recipe-tags"
+              >{% for tag in recipe.tags %}
+              <span class="recipe-badge">{{ tag }}</span>{% endfor %}</span
+            >
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
